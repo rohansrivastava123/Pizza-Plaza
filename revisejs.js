@@ -4,11 +4,12 @@ console.log(images);
 images.forEach((image) =>
 {
     console.log(image)
-    image.addEventListener("mouseover", function po() {
-        console.log("hi");
+    image.addEventListener("click", function() {
+    const Order =document.querySelector(".order")
+    Order.style.display="block"
       })
 })
-const op= (e)=>{console.log(e)}
+
 //searchbox 
 const tb= document.querySelector(".textb")
 tb.addEventListener('click',function remove()
@@ -24,10 +25,6 @@ document.addEventListener("click",function rem()
   ph.value='';
   sugg.innerHTML=''
   ph.placeholder="search your favourite dish"
-})
-
-window.addEventListener("mouseover",(e)=>{
-  console.log(e)
 })
 
 //items finding in the menu
