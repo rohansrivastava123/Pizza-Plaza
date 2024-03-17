@@ -1,5 +1,4 @@
 [
-   
    {
     "item": "Pizza",
     "price":"200"

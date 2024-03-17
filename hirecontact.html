@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Pizza Plaza</title>
+    <title>Contact | Pizza Plaza</title>
     <link rel="stylesheet" href="revisecss.css" />
     <link
       rel="apple-touch-icon"
@@ -87,9 +87,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-      
-      <!-- <div class="cursor"><img class="valscologo" src="./images/valscologo.png" alt=""></div> -->
-      <nav class="container">
+    <nav class="container">
       <div class="logo">
         <a href="revisehtml.html">
           <img
@@ -110,109 +108,45 @@
       </div>
 
       <ul>
-        <li class="items"><a class="items-a" href="about.html">ABOUT US</a></li>
-        <li class="items"><a class="items-a" href="gallery.html">GALLERY</a></li>
-        <li class="items"><a class="items-a" href="contact.html">CONTACT US</a></li>
+        <li class="items"><a href="about.html">ABOUT US</a></li>
+        <li class="items"><a href="gallery.html">GALLERY</a></li>
+        <li class="items"><a href="contact.html">CONTACT US</a></li>
       </ul>
     </nav>
-
-    <section class="bgimg">
-      <h1>PIZZA PLAZA</h1>
-      <h3>"A HOUSE OF TASTE "</h3>
-      <button class="btn"><h4>ORDER NOW !</h4></button>
-    </section>
-
-    <section class="explore">
-      <div class="services">
-        <h1>POPULAR &nbsp;DISHES</h1>
-      </div>
-      <section class="imgs">
-        <div class="img1">
-          <img src="images/img1.webp" alt="" />
-        </div>
-        <div class="img2">
-          <img src="images/img2.webp" alt="" />
-        </div>
-        <div class="img3">
-          <img src="images/img3.webp" alt="" />
-        </div>
-        <div class="img4">
-          <img src="images/img4.webp" alt="" />
-        </div>
-      </section>
-      <section class="subh">
-        <h3 class="s1">MINI PIZZA</h3>
-        <h3 class="s2">SALADS</h3>
-        <h3 class="s3">CRUSTLESS PIZZA</h3>
-        <h3 class="s4">BREADS</h3>
-      </section>
-      <button class="btn2">explore menu</button>
-    </section>
-
-    <section class="review">
-      <div class="cusrev">
-        <h3>WHAT OUR CUSTOMER SAYS..</h3>
-      </div>
-      <section class="revs">
-        <div class="r r1">
-          <img src="images/user1.jpg" alt="" />
-          <h6>Pheebes Martin</h6>
-          <p>
-            " Good food with Great taste . I tried their Farmhouse Pizza and it
-            was very awesome, full of veggies and crispy crust"
-          </p>
-        </div>
-        <div class="r r2">
-          <img src="images/user2.jpg" alt="" />
-          <h6>Paolo Luther</h6>
-          <p>
-            "" A Perfect place with really amazing food at very pocket friendly
-            Price. Ambience of place is quite good with prompt service. I
-            personally loved their , Paneer Pizza and Pizza momo. Overall a must
-            visit place in all terms quality, quantity and price. ""
-          </p>
-        </div>
-        <div class="r r3">
-          <img src="images/user3.jpg" alt="" />
-          <h6>Monica Singh</h6>
-          <p>
-            "" The pizzas are good. Infact everything . They have recently
-            launched Pizza Momo. It is worth a try. Ambience is okay, Staff is
-            also good."
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section class="imageslider">
-      <div class="img img1">
-        <img src="./images/pizza.jpg" alt="" />
-        <h3>PIZZA</h3>
-        <button class="order">ORDER NOW</button>
-      </div>
-      <div class="img img2">
-        <img src="./images/noodle.webp" alt="" />
-        <h3>NOODLES</h3>
-        <button class="order">ORDER NOW</button>
-      </div>
-      <div class="img img3">
-        <img src="./images/fries.cms" alt="" />
-        <h3>FRIES</h3>
-        <button class="order">ORDER NOW</button>
-      </div>
-      <div class="img img4">
-        <img src="./images/burger.jpg" alt="" />
-        <h3>BURGER</h3>
-        <button class="order">ORDER NOW</button>
-      </div>
-      <div class="img img5">
-        <img src="./images/shakes.webp" alt="" />
-        <h3>SHAKES</h3>
-        <button class="order">ORDER NOW</button>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
+<h4 class="hirehead">Congrats! We are Hiring</h4>
+    <div class="formcontainer">
+      <form class="form" action="hirecontact.php" method="post">
+          <h4>Your Name</h4>
+          <input class="input" type="text" name="username" required />
+          <h4>Address</h4>
+          <input class="input" type="text" name="address" required />
+          <h4>Your Phone Number</h4>
+          <input class="input" type="number" name="phno" required />
+          <h4>Gender</h4>
+          <input type="radio" name="gender" value="m">
+          <span>Male</span><br>
+          <input type="radio" name="gender" value="f">
+          <span>female</span><br>
+          <input type="radio" name="gender" value="f">
+          <span>others</span>
+          <h4>Your Pincode</h4>
+          <input class="input" type="number" name="pincode" required />
+          <h4>City</h4>
+          <input class="input" type="text" name="city" required></input>
+          <h4>Applied for</h4>
+          <select name="roles" id="roles">
+            <option value="">Select one from here </option>
+            <option value="Chef">Chef</option>
+            <option value="Assistant Chef">Assistant Chef</option>
+            <option value="Waiter">Waiter</option>
+            <option value="Manager">Manager</option>
+            <option value="Cleaning Staff">Cleaning staff</option>
+          </select>
+          <h4>Experience</h4>
+          <input class="input" type="number" name="experience">
+          <input class="submit" type="submit" />
+      </form>
+    </div>
     <footer class="footer">
       <div class="flogo">
         <a href="revisehtml.html">
@@ -242,7 +176,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="revisejs.js"></script>
   </body>
 </html>
